@@ -1,0 +1,5 @@
+title: Fullblocks
+modelClass: BsbVolmachten\ContentBlocks\Models\Fullblocks
+nameFrom: title
+toolbar:
+    buttons: reorder_toolbar
