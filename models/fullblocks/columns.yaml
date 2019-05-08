@@ -1,0 +1,13 @@
+columns:
+    title:
+        label: Titel
+        type: text
+        searchable: true
+    pageid:
+        label: Pagina
+        type: text
+        searchable: true
+    sort_order:
+        label: Volvorde
+        type: number
+        sortable: true

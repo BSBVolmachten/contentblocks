@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table bsbvolmachten_contentblocks_fullblocks'
+    - builder_table_create_bsbvolmachten_contentblocks_fullblocks.php
+1.0.3:
+    - 'Added sort_order & Pageid'
+    - builder_table_update_bsbvolmachten_contentblocks_fullblocks.php
+1.0.4:
+    - 'Added imgswitch'
+    - builder_table_update_bsbvolmachten_contentblocks_fullblocks_2.php
+1.0.5:
+    - 'Increased url_text length to 30'
+    - builder_table_update_bsbvolmachten_contentblocks_fullblocks_3.php
