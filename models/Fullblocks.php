@@ -1,4 +1,4 @@
-<?php namespace BsbVolmachten\ContentBlocks\Models;
+<?php namespace Bsbvolmachten\ContentBlocks\Models;
 
 use Model;
 
