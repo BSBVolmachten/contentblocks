@@ -1,4 +1,4 @@
-<?php namespace BsbVolmachten\ContentBlocks;
+<?php namespace Bsbvolmachten\ContentBlocks;
 
 use System\Classes\PluginBase;
 
