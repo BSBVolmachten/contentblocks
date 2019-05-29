@@ -14,3 +14,6 @@
     - builder_table_update_bsbvolmachten_contentblocks_fullblocks_3.php
 1.0.6:
     - 'Changed namespace from BsbVolmachten to Bsbvolmachten'
+1.0.7:
+    - 'Fix sort order'
+    - bsbvolmachten_fix_sort_order.php
