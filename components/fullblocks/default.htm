@@ -1,0 +1,40 @@
+{% if fullblocks %}
+    {% for block in fullblocks.fullblocks %}
+        {% if block.imgswitch == true %}
+            {% set col = 6 %}
+        {% else %}
+            {% set col = 12 %}
+        {% endif %}
+        <section class="about about-layout">
+            <div class="container">
+                <div class="row">
+                    {% if block.imgswitch == true and block.align == 'left' %}
+                    <div class="col-md-6">
+                        <div class="image">
+                            <img class="img-responsive" src="{{ block.image.thumb(1100,780,{'mode':'crop'}) }}" alt="{{ block.title }}" />
+                        </div>
+                    </div>
+                    {% endif %}
+                    <div class="col-md-{{ col }}">
+                        <div class="heading">
+                            <h3 class="heading-section">{{ block.title }}</h3>
+                        </div>
+                        <div class="passage">
+                            {{ block.text|raw }}
+                            {% if block.urlswitch == true %}
+                            <a href="{{ block.url }}" class="au-btn au-btn-default">{{ block.url_text }}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% if block.imgswitch == true and block.align == 'right' %}
+                    <div class="col-md-6">
+                        <div class="image">
+                            <img class="img-responsive" src="{{ block.image.thumb(1100,780,{'mode':'crop'}) }}" alt="{{ block.title }}" />
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+    {% endfor %}
+{% endif %}

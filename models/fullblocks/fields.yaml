@@ -15,10 +15,6 @@ fields:
         type: richeditor
     pageid:
         label: 'Op welke pagina weergeven'
-        options:
-            home: Home
-            verzekeringen: Verzekeringen
-            over-ons: 'Over Ons'
         showSearch: true
         span: left
         required: 1
