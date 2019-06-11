@@ -1,10 +1,9 @@
 <?php namespace Bsbvolmachten\ContentBlocks\Models;
 
 use Model;
+use Cms\Classes\Page as Pg;
+use Cms\Classes\Theme;
 
-/**
- * Model
- */
 class Fullblocks extends Model
 {
     use \October\Rain\Database\Traits\Validation;
@@ -19,6 +18,20 @@ class Fullblocks extends Model
      */
     public $timestamps = false;
 
+    protected $pages = [];
+
+    public function getPageidOptions() {
+
+        $theme = Theme::getEditTheme();
+        $pages = Pg::listInTheme($theme, true);
+        $options = [];
+
+        foreach($pages as $page) {
+            $options[$page->id] = $page->title;
+        }
+        asort($options);
+        return $options;
+    }
 
     /**
      * @var string The database table used by the model.
