@@ -16,9 +16,11 @@
                     </div>
                     {% endif %}
                     <div class="col-md-{{ col }}">
-                        <div class="heading">
-                            <h3 class="heading-section">{{ block.title }}</h3>
-                        </div>
+                        {% if block.titleswitch %}
+                            <div class="heading">
+                                <h3 class="heading-section{% if block.titlealign == 'center' %} text-center{% endif%}">{{ block.title }}</h3>
+                            </div>
+                        {% endif %}
                         <div class="passage">
                             {{ block.text|raw }}
                             {% if block.urlswitch == true %}
