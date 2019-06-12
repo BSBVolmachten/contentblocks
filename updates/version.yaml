@@ -22,3 +22,6 @@
 1.2.0:
     - 'Added snippet for templating'
     - 'Added dynamic loading of pages'
+1.2.1:
+    - 'Add extra options for title'
+    - bsbvolmachten_file_options.php

@@ -6,6 +6,21 @@ fields:
         attributes:
             maxlength: '255'
         type: text
+    titleswitch:
+        label: 'Titel weergeven'
+        span: left
+        type: switch
+    titlealign:
+        label: 'Locatie Titel'
+        options:
+            left: Links
+            center: Midden
+        span: left
+        trigger:
+            action: show
+            field: titleswitch
+            condition: checked
+        type: balloon-selector
     text:
         label: Inhoud
         size: giant
