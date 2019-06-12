@@ -5,7 +5,9 @@
         {% else %}
             {% set col = 12 %}
         {% endif %}
+        {% if loop.first %}
         <section class="about about-layout">
+        {% endif %}
             <div class="container">
                 <div class="row">
                     {% if block.imgswitch == true and block.align == 'left' %}
@@ -37,6 +39,8 @@
                     {% endif %}
                 </div>
             </div>
+        {% if loop.last %}
         </section>
+        {% endif %}
     {% endfor %}
 {% endif %}

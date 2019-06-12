@@ -25,3 +25,5 @@
 1.2.1:
     - 'Add extra options for title'
     - bsbvolmachten_file_options.php
+1.2.2:
+    - 'Fixed specing between stacked blocks'
