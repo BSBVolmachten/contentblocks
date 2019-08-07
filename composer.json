@@ -1,0 +1,18 @@
+{
+  "name": "bsbvolmachten/contentblocks",
+  "type": "october-plugin",
+  "description": "Demo OctoberCMS plugin",
+  "keywords": ["october", "cms", "bsbvolmachten", "plugin"],
+  "license": "MIT",
+
+  "authors": [
+    {
+      "name": "BSB Volmachten",
+      "email": "frenk.smeets@bsbverzekeringen.nl",
+      "role": "Webdeveloper"
+    }
+  ],
+  "require-dev": {
+    "barryvdh/laravel-ide-helper": "^2.6"
+  }
+}

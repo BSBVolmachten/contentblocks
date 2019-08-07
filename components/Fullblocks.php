@@ -14,7 +14,16 @@ class Fullblocks extends ComponentBase {
         ];
     }
 
-    public function fullblocks()
+    public function onRun() {
+        $blocks = $this->getBlocks()  ;
+        if ($blocks->isNotEmpty()) {
+            $this->page['fullblocks'] = $blocks;
+        } else {
+            $this->page['fullblocks'] = false;
+        }
+    }
+
+    public function getBlocks()
     {
         return Fullblock::orderBy('sort_order', 'ASC')->where('pageid', $this->page->id)->get();
     }
